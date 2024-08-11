@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp">
+
+    <GridLayout
+        android:id="@+id/gameboard"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/button_layout"
+        android:layout_centerInParent="true"
+        android:background="#DDDDDD"
+        android:columnCount="5"
+        android:rowCount="5"
+        android:useDefaultMargins="true">
+
+
+
+    </GridLayout>
+
+
+    <LinearLayout
+        android:id="@+id/button_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp">
+
+        <ImageButton
+            android:id="@+id/button_red"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@android:color/transparent"
+            android:src="@android:drawable/btn_star_big_off"
+            app:tint="@android:color/holo_red_dark"
+            android:contentDescription="Red Button" />
+
+        <ImageButton
+            android:id="@+id/button_blue"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@android:color/transparent"
+            android:src="@android:drawable/btn_star_big_off"
+            app:tint="@android:color/holo_blue_dark"
+            android:contentDescription="Blue Button" />
+
+        <ImageButton
+            android:id="@+id/button_green"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@android:color/transparent"
+            android:src="@android:drawable/btn_star_big_off"
+            app:tint="@android:color/holo_green_dark"
+            android:contentDescription="Green Button" />
+
+    </LinearLayout>
+</RelativeLayout>
